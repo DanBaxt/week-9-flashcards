@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "inquirer": "^5.1.0",
+    "request": "^2.85.0"
+  }
+}

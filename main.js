@@ -122,10 +122,120 @@ function startGame() {
                     console.log("");
                     console.log("You are correct!");
                     console.log("");
-                    ending();
+                    QuestionNo11();
                 } else {
                     console.log("");
                     console.log("Incorrect... The son of Theodore Roosevelt was Franklin D. Roosevelt");
+                    console.log("");
+                    QuestionNo11();
+                }
+            });
+        }
+        function QuestionNo11() {
+            var question11 = new BasicCard("Who was the thiry-ninth president of the United States?", "Jimmy Carter");
+            inquirer.prompt([
+                {
+                type: "input",
+                message: question11.front,
+                name: "eleventhQuestion"
+                }
+            ]).then(function(answer) {
+                if (answer.eleventhQuestion == question11.back) {
+                    console.log("");
+                    console.log("You are correct!");
+                    console.log("");
+                    QuestionNo12();
+                } else {
+                    console.log("");
+                    console.log("Incorrect... The thirty-ninth president of the United States was Jimmy Carter");
+                    console.log("");
+                    QuestionNo12();
+                }
+            });
+        }
+        function QuestionNo12() {
+            var question12 = new BasicCard("Who was the thiry-third president of the United States?", "Harry Truman");
+            inquirer.prompt([
+                {
+                type: "input",
+                message: question12.front,
+                name: "twelfthQuestion"
+                }
+            ]).then(function(answer) {
+                if (answer.twelfthQuestion == question12.back) {
+                    console.log("");
+                    console.log("You are correct!");
+                    console.log("");
+                    QuestionNo13();
+                } else {
+                    console.log("");
+                    console.log("Incorrect... The thirty-third president of the United States was Harry Truman");
+                    console.log("");
+                    QuestionNo13();
+                }
+            });
+        }
+        function QuestionNo13() {
+            var question13 = new BasicCard("Who was the twenty-fourth president of the United States?", "Grover Cleveland");
+            inquirer.prompt([
+                {
+                type: "input",
+                message: question13.front,
+                name: "thirteenthQuestion"
+                }
+            ]).then(function(answer) {
+                if (answer.thirteenthQuestion == question13.back) {
+                    console.log("");
+                    console.log("You are correct!");
+                    console.log("");
+                    QuestionNo14();
+                } else {
+                    console.log("");
+                    console.log("Incorrect... The twenty-fourth president of the United States was Grover Cleveland");
+                    console.log("");
+                    QuestionNo14();
+                }
+            });
+        }
+        function QuestionNo14() {
+            var question14 = new BasicCard("Who was the twenty-first president of the United States?", "Chester Arthur");
+            inquirer.prompt([
+                {
+                type: "input",
+                message: question14.front,
+                name: "fourteenthQuestion"
+                }
+            ]).then(function(answer) {
+                if (answer.fourteenthQuestion == question14.back) {
+                    console.log("");
+                    console.log("You are correct!");
+                    console.log("");
+                    QuestionNo15();
+                } else {
+                    console.log("");
+                    console.log("Incorrect... The twenty-first president of the United States was Chester Arthur");
+                    console.log("");
+                    QuestionNo15();
+                }
+            });
+        }
+        function QuestionNo15() {
+            var question15 = new BasicCard("Who was the twenty-second president of the United States?", "Grover Cleveland");
+            inquirer.prompt([
+                {
+                type: "input",
+                message: question15.front,
+                name: "fifteenthQuestion"
+                }
+            ]).then(function(answer) {
+                if (answer.fifteenthQuestion == question15.back) {
+                    console.log("");
+                    console.log("You are correct!");
+                    console.log("");
+                    ending();
+                } else {
+                    console.log("");
+                    console.log("Incorrect... The twenty-first president of the United States was Grover Cleveland");
                     console.log("");
                     ending();
                 }
@@ -235,12 +345,122 @@ function startGame() {
                 console.log("");
                 console.log("You are correct!");
                 console.log("");
-               ending();
+               QuestionNo16();
             } else {
                 console.log("");
                 console.log("Incorrect... The son of Theodore Roosevelt was Franklin D. Roosevelt");
                 console.log("");
-        ending();
+        QuestionNo16();
+            }
+        });
+    }
+    function QuestionNo16() {
+        var question16 = new ClozeCard("Jimmy Carter was the thiry-ninth president of the United States", "Jimmy Carter");
+        inquirer.prompt([
+            {
+            type: "input",
+            message: question16.partial,
+            name: "sixteenthQuestion"
+            }
+        ]).then(function(answer) {
+            if (answer.sixteenthQuestion == question16.cloze) {
+                console.log("");
+                console.log("You are correct!");
+                console.log("");
+                QuestionNo17();
+            } else {
+                console.log("");
+                console.log("Incorrect... The thirty-ninth president of the United States was Jimmy Carter");
+                console.log("");
+                QuestionNo17();
+            }
+        });
+    }
+    function QuestionNo17() {
+        var question17 = new ClozeCard("Harry Truman was the thiry-third president of the United States", "Harry Truman");
+        inquirer.prompt([
+            {
+            type: "input",
+            message: question17.partial,
+            name: "seventeenthQuestion"
+            }
+        ]).then(function(answer) {
+            if (answer.seventeenthQuestion == question17.cloze) {
+                console.log("");
+                console.log("You are correct!");
+                console.log("");
+                QuestionNo18();
+            } else {
+                console.log("");
+                console.log("Incorrect... The thirty-third president of the United States was Harry Truman");
+                console.log("");
+                QuestionNo18();
+            }
+        });
+    }
+    function QuestionNo18() {
+        var question18 = new ClozeCard("Grover Cleveland was the twenty-fourth president of the United States", "Grover Cleveland");
+        inquirer.prompt([
+            {
+            type: "input",
+            message: question18.partial,
+            name: "eighteenthQuestion"
+            }
+        ]).then(function(answer) {
+            if (answer.eighteenthQuestion == question18.cloze) {
+                console.log("");
+                console.log("You are correct!");
+                console.log("");
+                QuestionNo19();
+            } else {
+                console.log("");
+                console.log("Incorrect... The twenty-fourth president of the United States was Grover Cleveland");
+                console.log("");
+                QuestionNo19();
+            }
+        });
+    }
+    function QuestionNo19() {
+        var question19 = new ClozeCard("Chester Arthur was the twenty-first president of the United States", "Chester Arthur");
+        inquirer.prompt([
+            {
+            type: "input",
+            message: question19.partial,
+            name: "nineteenthQuestion"
+            }
+        ]).then(function(answer) {
+            if (answer.nineteenthQuestion == question19.cloze) {
+                console.log("");
+                console.log("You are correct!");
+                console.log("");
+                QuestionNo20();
+            } else {
+                console.log("");
+                console.log("Incorrect... The twenty-first president of the United States was Chester Arthur");
+                console.log("");
+                QuestionNo20();
+            }
+        });
+    }
+    function QuestionNo20() {
+        var question20 = new ClozeCard("Grover Cleveland was the twenty-second president of the United States", "Grover Cleveland");
+        inquirer.prompt([
+            {
+            type: "input",
+            message: question20.partial,
+            name: "twentithQuestion"
+            }
+        ]).then(function(answer) {
+            if (answer.twentithQuestion == question20.cloze) {
+                console.log("");
+                console.log("You are correct!");
+                console.log("");
+                ending();
+            } else {
+                console.log("");
+                console.log("Incorrect... The twenty-first president of the United States was Chester Arthur");
+                console.log("");
+                ending();
             }
         });
     }
